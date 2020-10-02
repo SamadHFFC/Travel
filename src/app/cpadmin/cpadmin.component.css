@@ -1,0 +1,231 @@
+
+body, html {
+	height: 100%;
+  src: url("../../assets/fonts/open-sans/OpenSans-Italic.ttf");
+}
+
+
+.bgAdmin {
+  /* The image used */
+  background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(20).jpg");
+  /* Full height */
+  height: 100%;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.maven_pro{font-family: 'Maven Pro', sans-serif;font-weight: 500;}
+.open_sans{font-family: 'Open Sans', sans-serif;font-weight: 500;} 
+
+.cpAdminText{
+    margin-right: 20px;
+    color: white;
+    
+}
+.navbar{
+  justify-content: space-between;
+  background-color: #00AA89;
+  height: 80px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar{
+    /* height: 150px; */
+
+  }
+  }
+
+  .buttonDisabled{
+    background-color: unset !important;
+   color: unset !important;
+  }
+
+
+  
+body {font-family: "Lato", sans-serif;}
+
+.sidebar {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
+}
+  .example-spacer {
+    flex: 1 1 auto;
+  }
+  
+/* 
+span{
+  padding-left: 0.625em;
+} */
+   
+.AllIconOfCpAdmin{
+  background-color: #00AA89;
+}
+.powerSettingIcon{
+    color: white;
+}
+.imageOfCAdmin{
+    background-color: white;
+    margin-right: 30px;
+    margin-top: -18px;
+    border-radius: 10px;
+}
+.CPAdminIcons{
+    padding-top: 20px;
+}
+.iconsOfCpAdmin{
+    /* margin-right: 50px; */
+    background-color: teal;
+    height: 50px;
+    width: 50px;
+    padding-top: 10px;
+    border-radius: 50%;
+    color: white;
+    white-space: pre-line;
+}
+.TextOfCpAdmin{
+    /* margin-right: 30px;  */
+    color: white;
+}
+.tittleUser{
+    color: #0b69a5;
+}
+  /* hide in desktop */
+@media only screen and (min-width: 960px) {
+  .cpAdminText{
+    display: none;
+  }
+  }
+  /* hide in desktop */
+  @media only screen and (min-width: 960px) {
+    .powerSettingIcon{
+      display: none;
+    }
+    }
+.last28Day{
+    color: #0b69a5;
+}   
+
+.cardForUserPaymentURef{
+  border-radius: 10px;
+}
+.user_payment_referrer{
+  color: black;
+}
+
+    .fs10{font-size: 0.625em;}
+    .fs12{font-size: 0.75em;}
+    .fs14{font-size: 0.875em;}
+    .fs15{font-size: 0.938em;}
+    .fs16{font-size: 1.0000em;}
+    .fs18{font-size: 1.125em;}
+    .fs20{font-size: 1.25em;}
+    .fs22{font-size: 1.375em;}
+    .fs24{font-size: 1.5em;}
+    .fs25{font-size: 1.563em;}
+    .fs26{font-size: 26px;}
+    .fs28{font-size: 1.75em;}
+    .fs30{font-size: 1.875em;}
+    .fs32{font-size: 2em;}
+    .fs34{font-size: 2.125em;}
+    .fs36{font-size: 2.250em;}
+    .fs64{font-size: 4em;}
+    
+ 
+  .m-r-20{
+    margin-right: 25px;
+  }
+  .m-l--10{
+    margin-left: 10px;
+  }
+  .m-t-10{
+     margin-top: 10px;
+ }
+  .m-l-10 {
+    margin-left: 10px; }
+  
+  .m-t-10 {
+    margin-top: 10px; }
+  
+  .m-r-10 {
+    margin-right: 10px; }
+  
+  .m-b-10 {
+    margin-bottom: 10px; }
+  
+  
+  .m-l-20 {
+    margin-left: 20px; }
+  
+  .m-t-20 {
+    margin-top: 20px; }
+ 
+  .p-l-10 {
+    padding-left: 10px; }
+  
+  .p-t-10 {
+    padding-top: 10px; }
+  
+  .p-r-10 {
+    padding-right: 10px; }
+  
+  .p-b-10 {
+    padding-bottom: 10px; }
+  
+  .p-l-15 {
+    padding-left: 15px; }
+  
+  .p-t-15 {
+    padding-top: 15px; }
+  
+  .p-r-15 {
+    padding-right: 15px; }
+  
+  .p-l-20 {
+    padding-left: 20px; }
+  .m-r-30{
+    margin-right: 30px;
+  }
+  .m-b-10{
+  margin-bottom: 10px;
+  }
+  .m-r-70{
+    margin-right: 70px;
+  } 
+  .m-r--76{
+
+  margin-left: -76px;
+  }
+    
+    
+    

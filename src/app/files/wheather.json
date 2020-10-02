@@ -1,0 +1,15 @@
+{
+	"FlowDataID":2147483647,
+	"FlowReadingValue":0,
+	"FlowStationLocation":{
+		"Description":"String content",
+		"Direction":"String content",
+		"Latitude":12678967.543233,
+		"Longitude":12678967.543233,
+		"MilePost":12678967.543233,
+		"RoadName":"String content"
+	},
+	"Region":"String content",
+	"StationName":"String content",
+	"Time":"\/Date(928174800000-0700)\/"
+}

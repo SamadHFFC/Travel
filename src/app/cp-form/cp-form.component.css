@@ -1,0 +1,56 @@
+.navBarCpForm{
+  background-color: #00AA89;
+  height: 20px;
+}
+.example-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    background-color: white;
+    /* margin-left: 20px; */
+    
+  }
+  .open_sans{font-family: 'Open Sans', sans-serif;font-weight: 500;} 
+
+  .example-full-width {
+    width: 100%;
+    padding: 10px ;
+  }
+  .mat-radio-button ~ .mat-radio-button {
+    margin-left: 16px;
+    padding: 10px;
+  }
+  .PrimaryBtn{
+    background-color: #0b69a5;
+    color: white;
+    font-size: 20px;
+  }
+
+ 
+ .closeBtn{
+  float: left;
+  margin-left: 20px;
+  margin-bottom: 10px;
+ }
+ .scheduleForm{
+  margin-top: 10px;
+  margin-left: 10px;
+ }
+ .selectOption{
+   color: #00AA89;
+ }
+
+ .m-t-25{
+  margin-top: 25px;
+}
+.m-l-10{
+  margin-left: 10px;
+}
+
+@media only screen and (min-width: 960px) {
+  .CpForm{
+    position:absolute;
+    left: 30%;
+    margin-top: 20px;
+  }
+  }

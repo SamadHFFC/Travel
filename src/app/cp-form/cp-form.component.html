@@ -1,0 +1,51 @@
+<mat-toolbar class="navBarCpForm">
+</mat-toolbar>
+<div class="CpForm">
+<mat-card>
+  <i class="material-icons" style="font-size: 30px;">&#xe5cd;</i>
+  <form class="example-form">
+    <div>
+    <mat-card-title class="open_sans" style="margin-top: 10px;"><b style=" margin-left: 5px;">Let's schedule</b></mat-card-title>
+    </div>
+    <mat-form-field class="example-full-width">
+      <mat-label>Title</mat-label>
+      <input matInput placeholder="Ex. Anlysis">
+    </mat-form-field>
+
+    <mat-form-field class="example-full-width">
+      <mat-label>Message</mat-label>
+      <input matInput placeholder="Ex. ">
+    </mat-form-field>
+    <mat-form-field class="example-full-width">
+      <mat-label>Big Message</mat-label>
+      <textarea matInput placeholder="Ex. It makes me feel..."></textarea>
+    </mat-form-field>
+    <mat-radio-group aria-label="Select an option"><br>
+      <mat-label class="m-l-10 selectOption open_sans">Notification delivery type</mat-label><br>
+      <mat-radio-button value="1" class="m-l-10">In App</mat-radio-button>
+      <mat-radio-button value="2">In Web</mat-radio-button>
+    </mat-radio-group><br>
+    <mat-label class="m-l-10 selectOption open_sans">Screen to open</mat-label>
+    <mat-form-field class="m-l-10" style="width: 96%;" appearance = "outline"> 
+      <mat-label>Tap to select</mat-label>
+      <mat-select [(value)]="selected">
+        <mat-option>None</mat-option>
+        <mat-option value="option1">Option 1</mat-option>
+        <mat-option value="option2">Option 2</mat-option>
+        <mat-option value="option3">Option 3</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-radio-group aria-label="Select an option"><br>
+      <mat-label class="m-l-10 selectOption open_sans">Target audience</mat-label><br>
+      <mat-radio-button class="m-l-10" value="1">universal</mat-radio-button>
+
+    </mat-radio-group><br>
+    <mat-radio-group aria-label="Select an option"><br>
+      <mat-label class="m-l-10 selectOption open_sans">When you want to send this notification?</mat-label><br>
+      <mat-radio-button class="m-l-10" value="1">New</mat-radio-button>
+      <mat-radio-button value="2">shedule</mat-radio-button>
+    </mat-radio-group>
+    <button mat-flat-button class="btn btn-primary open_sans btn-lg btn-block PrimaryBtn">Next</button>
+  </form>
+</mat-card> </div>
+

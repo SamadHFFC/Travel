@@ -1,0 +1,250 @@
+   <div class="sidebar">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <a href="">
+      <p class="" style="font-size: 25px; color: white;">WA Tolls</p></a>
+      <!-- <div class="container"> -->
+        <!-- <div class="row"> -->
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <li class="nav-item">
+              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a><br>
+            </li>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <li class="nav-item">
+              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">1405</a><br>
+            </li>
+          </div>
+          <div class="col-sm-12 col-md-12 col-lg-12">
+            <li class="nav-item">
+              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">HWY 167</a>
+            </li>
+          </div>
+        <!-- </div> -->
+      <!-- </div> -->
+      
+    </ul>
+  </div>
+  <br>
+  <div class="main" style="margin-left: 300px;">
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+        <div class="container">
+          <h2>Toll Summary</h2>
+          <div class="row">
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <mat-card class="cardForUserPaymentURef m-b-10 ">
+                <mat-card-title class="tittleUser open_sans">Toll</mat-card-title>
+                <mat-card style="background-color: #eeeeee;">{{travelData.FlowDataID}}</mat-card><br>
+
+
+                <!-- <mat-card style="background-color: #eeeeee;"></mat-card> -->
+
+              </mat-card>
+              <mat-card class="cardForUserPaymentURef m-b-10 ">
+                <mat-card-title class="tittleUser open_sans"></mat-card-title>
+                <mat-card style="background-color: #eeeeee;">{{travelData.FlowReadingValue}}</mat-card><br>
+
+
+                <!-- <mat-card style="background-color: #eeeeee;"></mat-card> -->
+
+              </mat-card>
+              
+            </div>
+            
+          </div>
+        </div>
+      
+      
+      </div>
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+        
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-12 col-md-12 colo-lg-12">
+              <mat-card class="cardForUserPaymentURef m-b-10">
+                <mat-card-title class="tittleUser open_sans">Payment</mat-card-title>
+                <mat-divider></mat-divider>
+                <mat-grid-list cols="2" rowHeight="2:1">
+                  <mat-grid-tile>
+                    <mat-list role="list">
+                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold"><i class="fa fa-inr"></i>&nbsp;1,45,63,354.91</mat-list-item>
+                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Account</mat-list-item>
+                    </mat-list>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                    <mat-list role="list">
+                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">757</mat-list-item>
+                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Payments</mat-list-item>
+                    </mat-list>
+                  </mat-grid-tile>
+                </mat-grid-list>
+              </mat-card>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+      
+        <div class="container">
+          <div class="row">
+            
+            
+            <div class="col-sm-12 col-md-12 col-lg-12">
+              <mat-card class="cardForUserPaymentURef m-b-10">
+                <mat-card-title class="tittleUser open_sans">User Referrals</mat-card-title>
+                <mat-divider></mat-divider>
+                <mat-grid-list cols="2" rowHeight="2:1">
+                  <mat-grid-tile>
+                    <mat-list role="list">
+                      <mat-list-item role="listitem" class="fs16 user_payment_referrer fs12 font-weight-bold">22</mat-list-item>
+                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Loads</mat-list-item>
+                    </mat-list>
+                  </mat-grid-tile>
+                  <mat-grid-tile>
+                    <mat-list role="list">
+                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">21</mat-list-item>
+                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Refererrs</mat-list-item>
+                    </mat-list>
+                  </mat-grid-tile>
+                </mat-grid-list>
+              </mat-card>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+       
+  
+  
+  
+  
+  <!-- <div class="bgAdmin">
+  <mat-toolbar color="primary" class="m-b-10">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      <span>My First Project</span>
+      <span class="example-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true">
+        <a href="#" mat-button class="buttonDisabled">
+          <mat-icon>notifications</mat-icon>
+          Notifications
+        </a>
+        <a href="#" mat-button class="buttonDisabled">
+          <mat-icon>message</mat-icon>
+          Messages
+        </a>
+        <a href="#" mat-button class="buttonDisabled">
+          <mat-icon>account_box</mat-icon>
+          My Account
+        </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <main>
+
+    <div style="background-color: white;">
+        <div class="container-fluid">
+            <div class="row ">
+  
+                <div class="card-body bg-primary">
+  
+                    <div class="">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item" style="margin-top: 4px;">
+                                  <a href="http://localhost/RmConnector/dashboard" class="text-decoration-none">Dashboard</a>
+                                </li>
+                                <li class="breadcrumb-item active">
+                                  <button mat-button color="primary" [routerLink]="['/BranchLocatorComponent']" >Branch User Explorer</button>
+  
+                                </li>
+                            </ol>
+                    </div>
+                </div>
+                
+            </div>
+            
+  
+        </div>
+    </div>
+  
+    <div>
+    </div>
+  
+  </main>
+  
+<br>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <mat-card class="cardForUserPaymentURef m-b-10 ">
+          <mat-card-title class="tittleUser open_sans">User</mat-card-title>
+          <mat-divider></mat-divider>
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">7549</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Active Users</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">827</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Registered</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card>
+      </div>
+      <div class="col-sm-12 col-md-4 colo-lg-4">
+        <mat-card class="cardForUserPaymentURef m-b-10">
+          <mat-card-title class="tittleUser open_sans">Payment</mat-card-title>
+          <mat-divider></mat-divider>
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold"><i class="fa fa-inr"></i>&nbsp;1,45,63,354.91</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Account</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">757</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Payments</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card>
+      </div>
+
+      <div class="col-sm-12 col-md-4 col-lg-4">
+        <mat-card class="cardForUserPaymentURef m-b-10">
+          <mat-card-title class="tittleUser open_sans">User Referrals</mat-card-title>
+          <mat-divider></mat-divider>
+          <mat-grid-list cols="2" rowHeight="2:1">
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer fs12 font-weight-bold">22</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Loads</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+            <mat-grid-tile>
+              <mat-list role="list">
+                <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">21</mat-list-item>
+                <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Refererrs</mat-list-item>
+              </mat-list>
+            </mat-grid-tile>
+          </mat-grid-list>
+        </mat-card>
+      </div>
+    </div>
+  </div>
+
+
+
+  
+</div> -->
