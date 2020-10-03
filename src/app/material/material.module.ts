@@ -14,6 +14,8 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import { FormsModule } from '@angular/forms';
 import {MatRadioModule} from '@angular/material/radio';
 import {MatSelectModule} from '@angular/material/select';
+import {MatTableModule} from '@angular/material/table';
+
 
 // import { FlexLayoutModule } from '@angular/flex-layout';
 
@@ -48,6 +50,7 @@ const MaterialComponents = [
     FormsModule,
     MatRadioModule,
     MatSelectModule,
+    MatTableModule,
     // FlexLayoutModule
 
   ],

@@ -25,6 +25,8 @@
     </ul>
   </div>
   <br>
+
+  
   <div class="main" style="margin-left: 300px;">
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
@@ -32,22 +34,29 @@
           <h2>Toll Summary</h2>
           <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-12">
-              <mat-card class="cardForUserPaymentURef m-b-10 ">
-                <mat-card-title class="tittleUser open_sans">Toll</mat-card-title>
-                <mat-card style="background-color: #eeeeee;">{{travelData.FlowDataID}}</mat-card><br>
-
 
                 <!-- <mat-card style="background-color: #eeeeee;"></mat-card> -->
-
-              </mat-card>
-              <mat-card class="cardForUserPaymentURef m-b-10 ">
-                <mat-card-title class="tittleUser open_sans"></mat-card-title>
-                <mat-card style="background-color: #eeeeee;">{{travelData.FlowReadingValue}}</mat-card><br>
-
-
-                <!-- <mat-card style="background-color: #eeeeee;"></mat-card> -->
-
-              </mat-card>
+                <div class="container">
+                  <h2>Toll</h2>
+                  <table class="table table-hover">
+                    <thead>
+                      <tr>
+                        <!-- <th>Firstname</th> -->
+                        <th>Flow Data ID</th>
+                        <th>Flow Reading Value</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!-- <td>{{travelData.FlowDataID}}</td> -->
+                        <td>{{travelData.FlowDataID}}</td>
+                        <td>{{travelData.FlowReadingValue}}</td>
+                      </tr>
+                      
+                    </tbody>
+                  </table>
+                </div>
+                
               
             </div>
             
@@ -67,8 +76,8 @@
                 <mat-grid-list cols="2" rowHeight="2:1">
                   <mat-grid-tile>
                     <mat-list role="list">
-                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold"><i class="fa fa-inr"></i>&nbsp;1,45,63,354.91</mat-list-item>
-                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Account</mat-list-item>
+                      <mat-list-item role="listitem" class="fs16 open_sans font-weight-bold">{{bridgeApi.BeginLatitude}}</mat-list-item>
+                      <mat-list-item role="listitem" class="open_sans fs16 font-weight-bold">{{bridgeApi.BeginLongitude}}</mat-list-item>
                     </mat-list>
                   </mat-grid-tile>
                   <mat-grid-tile>
