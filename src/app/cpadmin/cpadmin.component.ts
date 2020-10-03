@@ -10,6 +10,7 @@ import Bridge from './../files/bridges.json';
   styleUrls: ['./cpadmin.component.css']
 })
 export class CPAdminComponent implements OnInit {
+  
 
   public travelData = [];
   public bridgeApi = [];
