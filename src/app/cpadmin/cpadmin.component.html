@@ -1,66 +1,175 @@
-   <div class="sidebar">
-    <ul class="nav nav-tabs" id="myTab" role="tablist">
-      <a href="">
-      <p class="" style="font-size: 25px; color: white;">WA Tolls</p></a>
-      <!-- <div class="container"> -->
-        <!-- <div class="row"> -->
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <li class="nav-item">
-              <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Home</a><br>
-            </li>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <li class="nav-item">
-              <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">1405</a><br>
-            </li>
-          </div>
-          <div class="col-sm-12 col-md-12 col-lg-12">
-            <li class="nav-item">
-              <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab" aria-controls="contact" aria-selected="false">HWY 167</a>
-            </li>
-          </div>
-        <!-- </div> -->
-      <!-- </div> -->
-      
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">WA Tolls</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <!-- <a class="nav-link" href="#">Link</a> -->
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="#">Another action</a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">Something else here</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link disabled" href="#">Disabled</a>
+      </li>
     </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+    </form>
   </div>
-  <br>
+</nav> 
+<br>
 
-  
-  <div class="main" style="margin-left: 300px;">
-    <div class="tab-content" id="myTabContent">
-      <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-        <div class="container">
+<main>
 
-          <h2>Toll Summary</h2>
-          <mat-card class="example-card">
-            <mat-card-header>
-              <mat-card-title>Toll</mat-card-title>
-            </mat-card-header>
-            <mat-card-content>
-                <div class="row">
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <ul>
-                      <p class="font-weight-bold">Flow Data ID</p>
-                      <li class="" style="list-style-type: none;">{{travelData.FlowDataID}}</li>
-                    </ul>
+  <div style="background-color: white;">
+      <div class="container-fluid">
+          <div class="row ">
+
+              <div class="card-body bg-primary">
+
+                  <div class="">
+                          <ol class="breadcrumb" style="background-color: white;">
+                              <li class="breadcrumb-item" style="margin-top: 4px;">
+                                <a href="http://localhost/RmConnector/dashboard" class="text-decoration-none">Dashboard</a>
+                              </li>
+                              <li class="breadcrumb-item active">
+                                <button mat-button color="primary" [routerLink]="['/BranchLocatorComponent']" >Toll Summary
+                                </button>
+
+                              </li>
+                          </ol>
                   </div>
-                  <div class="col-sm-6 col-md-6 col-lg-6">
-                    <p class="font-weight-bold">Flow Reading Value</p>
-                    <li class="" style="list-style-type: none;">{{travelData.FlowReadingValue}}</li>
-                  </div>
+              </div>
+              
+          </div>
+          
+
+      </div>
+  </div>
+
+  <div>
+  </div>
+
+</main>
+<br>
+<div class="mdl-tabs vertical-mdl-tabs mdl-js-tabs mdl-js-ripple-effect">
+  <div class="mdl-grid mdl-grid--no-spacing">
+    <div class="mdl-cell mdl-cell--3-col" style="height: 100%;">
+        <div class="mdl-tabs__tab-bar" style="background-color: #f8f9fa;">
+          <p class="font-weight-bold fs20 p-l-20 p-b-6 p-t-10">WA Tolls</p>
+           <a href="#tab1-panel" class="mdl-tabs__tab is-active">
+               <span class="hollow-circle"></span>
+                <a href=""><p class="font-weight-bold" style="color: black;">Home</p></a>
+           </a>
+           <a href="#tab2-panel" class="mdl-tabs__tab">
+                <span class="hollow-circle"></span>
+                <a href=""><p class="font-weight-bold" style="color: black;">1405</p></a>
+            </a>
+            <a href="#tab3-panel" class="mdl-tabs__tab">
+                <span class="hollow-circle"></span>
+                <a href=""> <p class="font-weight-bold" style="color: black;">HWY 167</p></a>
+            </a>
+       </div>
+     </div>
+    
+     <div class="mdl-cell mdl-cell--9-col">
+          <div class="mdl-tabs__panel is-active" id="tab1-panel">
+            <div class="container">
+
+              <mat-card class="example-card">
+                <mat-card-header>
+                  <mat-card-title>Toll</mat-card-title>
+                </mat-card-header>
+                <mat-card-content>
+                    <div class="row">
+                      <div class="col-sm-6 col-md-6 col-lg-6">
+                        <ul>
+                          <p class="font-weight-bold">Flow Data ID</p>
+                          <li class="" style="list-style-type: none;">{{travelData.FlowDataID}}</li>
+                        </ul>
+                      </div>
+                      <div class="col-sm-6 col-md-6 col-lg-6">
+                        <p class="font-weight-bold">Flow Reading Value</p>
+                        <li class="" style="list-style-type: none;">{{travelData.FlowReadingValue}}</li>
+                      </div>
+                    </div>
+    
+                
+                </mat-card-content>
+    
+              </mat-card>
+              <br>
+              
+            </div>
+          </div>
+          <div class="mdl-tabs__panel" id="tab2-panel" >
+            <mat-card>
+
+            <div class="container">
+              <mat-card-title>Flow Station Location</mat-card-title>
+    
+              <div class="row">
+                <div class="col-sm-12 col-md-12 col-lg-12">
+    
+                      <table class="table table-hover">
+                        <thead>
+                          <tr>
+                            <th>Description</th>
+                            <th>Direction</th>
+                            <th>Latitude</th>
+                            <th>Longitude</th>
+                            <th>Mile Post</th>
+                            <th>Road Name</th>
+                            <th>Region</th>
+                            <th>Station Name</th>
+                            <th>Time</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr>
+                            <td>{{travelData.FlowStationLocation.Description}}</td>
+                            <td>{{travelData.FlowStationLocation.Direction}}</td>
+                            <td>{{travelData.FlowStationLocation.Latitude}}</td>
+                            <td>{{travelData.FlowStationLocation.Longitude}}</td>
+                            <td>{{travelData.FlowStationLocation.MilePost}}</td>
+                            <td>{{travelData.FlowStationLocation.RoadName}}</td>
+                            <td>{{travelData.Region}}</td>
+                            <td>{{travelData.StationName}}</td>
+                            <td>{{travelData.Time}}</td>
+                          </tr>
+                          
+                        </tbody>
+                      </table>
                 </div>
-
-            
-            </mat-card-content>
-
+                
+              </div>
+            </div>
           </mat-card>
-          <br>
-          <mat-card-title>Flow Station Location</mat-card-title>
+          </div>
+          <div class="mdl-tabs__panel" id="tab3-panel">
+            <mat-card>
+            <div class="container">
+              <mat-card-title>Flow Station</mat-card-title>
 
-          <div class="row">
-            <div class="col-sm-12 col-md-12 col-lg-12">
-
+              <div class="row">  
+                <div class="col-sm-12 col-md-12 col-lg-12">
+                  
                   <table class="table table-hover">
                     <thead>
                       <tr>
@@ -70,9 +179,9 @@
                         <th>Longitude</th>
                         <th>Mile Post</th>
                         <th>Road Name</th>
-                        <!-- <th>Region</th>
+                        <th>Region</th>
                         <th>Station Name</th>
-                        <th>Time</th> -->
+                        <th>Time</th>
                       </tr>
                     </thead>
                     <tbody>
@@ -83,82 +192,21 @@
                         <td>{{travelData.FlowStationLocation.Longitude}}</td>
                         <td>{{travelData.FlowStationLocation.MilePost}}</td>
                         <td>{{travelData.FlowStationLocation.RoadName}}</td>
-                        <!-- <td>{{travelData.Region}}</td>
+                        <td>{{travelData.Region}}</td>
                         <td>{{travelData.StationName}}</td>
-                        <td>{{travelData.Time}}</td> -->
+                        <td>{{travelData.Time}}</td>
                       </tr>
                       
                     </tbody>
                   </table>
+                </div>
+              </div>
             </div>
-            
+          </mat-card>
           </div>
-        </div>
-      
-      
-      </div>
-      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-        
-        <div class="container">
-          <div class="row">
-            <div class="col-sm-12 col-md-12 colo-lg-12">
-              <mat-card class="cardForUserPaymentURef m-b-10">
-                <mat-card-title class="tittleUser open_sans">Payment</mat-card-title>
-                <mat-divider></mat-divider>
-                <mat-grid-list cols="2" rowHeight="2:1">
-                  <mat-grid-tile>
-                    <mat-list role="list">
-                      <mat-list-item role="listitem" class="fs16 open_sans font-weight-bold">{{bridgeApi.BeginLatitude}}</mat-list-item>
-                      <mat-list-item role="listitem" class="open_sans fs16 font-weight-bold">{{bridgeApi.BeginLongitude}}</mat-list-item>
-                    </mat-list>
-                  </mat-grid-tile>
-                  <mat-grid-tile>
-                    <mat-list role="list">
-                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">757</mat-list-item>
-                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Payments</mat-list-item>
-                    </mat-list>
-                  </mat-grid-tile>
-                </mat-grid-list>
-              </mat-card>
-            </div>
-            
-          </div>
-        </div>
-      </div>
-      <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-      
-        <div class="container">
-          <div class="row">
-            
-            
-            <div class="col-sm-12 col-md-12 col-lg-12">
-              <mat-card class="cardForUserPaymentURef m-b-10">
-                <mat-card-title class="tittleUser open_sans">User Referrals</mat-card-title>
-                <mat-divider></mat-divider>
-                <mat-grid-list cols="2" rowHeight="2:1">
-                  <mat-grid-tile>
-                    <mat-list role="list">
-                      <mat-list-item role="listitem" class="fs16 user_payment_referrer fs12 font-weight-bold">22</mat-list-item>
-                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Loads</mat-list-item>
-                    </mat-list>
-                  </mat-grid-tile>
-                  <mat-grid-tile>
-                    <mat-list role="list">
-                      <mat-list-item role="listitem" class="fs16 user_payment_referrer font-weight-bold">21</mat-list-item>
-                      <mat-list-item role="listitem" class="open_sans fs12 font-weight-bold">Total Refererrs</mat-list-item>
-                    </mat-list>
-                  </mat-grid-tile>
-                </mat-grid-list>
-              </mat-card>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
   </div>
-       
-  
-  
+</div>
   
   
   <!-- <div class="bgAdmin">

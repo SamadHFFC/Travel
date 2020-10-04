@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import SimpaleJson from './../files/wheather.json';
-import Bridge from './../files/bridges.json';
+// import Bridge from './../files/bridges.json';
 
 
 
@@ -18,13 +18,13 @@ export class CPAdminComponent implements OnInit {
   constructor() {
 
     console.log('this is for json file loading',SimpaleJson)
-    console.log("this is data for bridges",Bridge)
+    // console.log("this is data for bridges",Bridge)
    }
 
   ngOnInit() {
 
     this.travelData = SimpaleJson;
-    this.bridgeApi = Bridge;
+    // this.bridgeApi = Bridge;
 
 
     console.log('it is for testing',this.travelData)
