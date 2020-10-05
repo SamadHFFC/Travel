@@ -1,0 +1,23 @@
+{
+	"CameraID":2147483647,
+	"CameraLocation":{
+		"Description":"String content",
+		"Direction":"String content",
+		"Latitude":12678967.543233,
+		"Longitude":12678967.543233,
+		"MilePost":12678967.543233,
+		"RoadName":"String content"
+	},
+	"CameraOwner":"String content",
+	"Description":"String content",
+	"DisplayLatitude":1.26743233E+15,
+	"DisplayLongitude":1.26743233E+15,
+	"ImageHeight":2147483647,
+	"ImageURL":"String content",
+	"ImageWidth":2147483647,
+	"IsActive":true,
+	"OwnerURL":"String content",
+	"Region":"String content",
+	"SortOrder":2147483647,
+	"Title":"String content"
+}
