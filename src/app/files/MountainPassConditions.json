@@ -1,0 +1,20 @@
+{
+	"DateUpdated":"\/Date(928174800000-0700)\/",
+	"ElevationInFeet":2147483647,
+	"Latitude":1.26743233E+15,
+	"Longitude":1.26743233E+15,
+	"MountainPassId":2147483647,
+	"MountainPassName":"String content",
+	"RestrictionOne":{
+		"RestrictionText":"String content",
+		"TravelDirection":"String content"
+	},
+	"RestrictionTwo":{
+		"RestrictionText":"String content",
+		"TravelDirection":"String content"
+	},
+	"RoadCondition":"String content",
+	"TemperatureInFahrenheit":2147483647,
+	"TravelAdvisoryActive":true,
+	"WeatherCondition":"String content"
+}

@@ -1,0 +1,29 @@
+{
+	"AlertID":2147483647,
+	"County":"String content",
+	"EndRoadwayLocation":{
+		"Description":"String content",
+		"Direction":"String content",
+		"Latitude":12678967.543233,
+		"Longitude":12678967.543233,
+		"MilePost":12678967.543233,
+		"RoadName":"String content"
+	},
+	"EndTime":"\/Date(928174800000-0700)\/",
+	"EventCategory":"String content",
+	"EventStatus":"String content",
+	"ExtendedDescription":"String content",
+	"HeadlineDescription":"String content",
+	"LastUpdatedTime":"\/Date(928174800000-0700)\/",
+	"Priority":"String content",
+	"Region":"String content",
+	"StartRoadwayLocation":{
+		"Description":"String content",
+		"Direction":"String content",
+		"Latitude":12678967.543233,
+		"Longitude":12678967.543233,
+		"MilePost":12678967.543233,
+		"RoadName":"String content"
+	},
+	"StartTime":"\/Date(928174800000-0700)\/"
+}

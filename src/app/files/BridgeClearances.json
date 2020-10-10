@@ -1,0 +1,18 @@
+{
+	"BeginLatitude":12678967.543233,
+	"BeginLongitude":12678967.543233,
+	"BeginMilePost":12678967.543233,
+	"BridgeName":"String content",
+	"EndLatitude":12678967.543233,
+	"EndLongitude":12678967.543233,
+	"EndMilePost":12678967.543233,
+	"IsConnector":2147483647,
+	"LRSRoute":"String content",
+	"LocationID":"1627aea5-8e0a-4371-9022-9b504344e724",
+	"MaximumVerticalClearance":"String content",
+	"MaximumVerticalClearanceInches":2147483647,
+	"MinimumVerticalClearance":"String content",
+	"MinimumVerticalClearanceInches":2147483647,
+	"StateRouteID":"String content",
+	"StructureID":"String content"
+}
