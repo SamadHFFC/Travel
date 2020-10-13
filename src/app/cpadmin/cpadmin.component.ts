@@ -47,14 +47,14 @@ export class CPAdminComponent implements OnInit {
 
 
 
-    // console.log('it is for testing',this.travelData)
-    // console.log("this is loading for bridges data",this.bridgeApi)
-    // console.log("camera data loading",this.camera_api)
-    // console.log("the data of bridge clearance",this.bridge_clean)
-    // console.log("this data is for Traffic Alert",this.traffic_alert)
-    // console.log("mountain pass conditions data is: ",this.mountain_pass_conditions)
+    console.log('it is for testing',this.travelData)
+    console.log("this is loading for bridges data",this.bridgeApi)
+    console.log("camera data loading",this.camera_api)
+    console.log("the data of bridge clearance",this.bridge_clean)
+    console.log("this data is for Traffic Alert",this.traffic_alert)
+    console.log("mountain pass conditions data is: ",this.mountain_pass_conditions)
 
-    // console.log("The Travel Times Data is:",this.travel_times_api);
+    console.log("The Travel Times Data is:",this.travel_times_api);
     console.log("the Ferries of Data is loading here",this.ferries_data_api)
   }
 
